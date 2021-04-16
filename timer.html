@@ -124,6 +124,8 @@ if(seconds==0){
 
 var textSec = "00"
 textSec = seconds1
+  if(seconds1 < 10)
+            textSec = '0' + seconds1
 
 var display = document.getElementById("display");
 display.innerHTML = minute + ':' + textSec
@@ -159,6 +161,8 @@ function cancel(){
     display.innerHTML ='00:00'
     seconds = minute * 60
 }
+  
+
 
 
 
