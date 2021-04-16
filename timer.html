@@ -8,28 +8,31 @@
 
   <style>
     body{
-      background-color: aliceblue;
+      background-color: #2F3437;
+      font-family: Segoe UI, sans-serif;
     }
     .section {
-      background-color: aliceblue;
+      background-color: #2F3437;
       padding: 10px;
       width: fit-content;
 
     }
 #display{
   margin-bottom: 5px;
-    font-size: 30px;
-    font-family: monospace;
-    color: darkturquoise;
+    font-size: 32px;
+    text-align: center;
+    color: #ffffff;
 }
     .section input {
       font-size: 8px;
-        color: #2D2D32;
+        color: #2F3437;
+        background-color: #ffffff;
         text-align: center;
-        border: 1px solid gray;
+        border: 1px solid #979A9B;
+        border-radius: 5px;
         width: 30px;
         padding: 5px 1px;
-        margin-right: 4px;
+        margin-right: 7px;
        display: inline-block;
     }
 
@@ -39,12 +42,13 @@
     }
 
         .buttons button {
-            margin-right: 4px;
+            margin-right: 7px;
 
             padding: 5px 10px;
 
             background-color: #d8d8d8;
             border: none;
+            border-radius: 8px;
 
             color: white;
             font-size: 15px;
@@ -64,11 +68,11 @@
             }
 
             .buttons button:nth-child(3){
-                background-color: #8bc34a;
+                background-color: #0F7B6C;
             }
 
             .buttons button:nth-child(4){
-                background-color: rgb(201, 89, 69);
+                background-color: #E03E3E;
             }
 
   </style>
@@ -79,7 +83,7 @@
     <div id="display">0:00</div>
   
     <div class="buttons">
-      <input type="text" id="input" name="input" placeholder="minutes">
+      <input type="text" id="input" name="input" placeholder="mins">
       <input type="text" id="input2" name="input2" placeholder="seconds">
 
       <button onclick="start()">▶</button>
